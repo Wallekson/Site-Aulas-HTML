@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <h1>Reserva</h1>
+        <form method="post" action="">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome</label><br>
+                <input type="text" name="nome"><br><br>
+            
+                <label>Email</label><br>
+                <input type="email" required name="email"><br><br>                        
+            </fieldset>        
+            
+            <fieldset>
+                <legend>Serviços desejados</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de Passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" value="Veiculos">Reserva de Veículos
+                </label>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="cartaoDeCredito"> Cartao de Crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="boleto"> Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="pix"> PIX
+                </label>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Prazo de Pagamento</legend>
+                <select name="prazoPagamernto">
+                    <option value="aVista" selected>A vista</option>
+                    <option value="cincoVezes">Cinco vezes sem juros</option>
+                    <option value="dezVezes" >Dez vezes com juros</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentario</legend><br>
+                <textarea rows="5" name="comentario"></textarea>
+            </fieldset>
+
+            <br><input type="submit" value="Enviar">
+        </form>    
+</body>
+</html>
